@@ -45,7 +45,7 @@ if (sessionStorage.getItem('flowersUnlocked') === 'yes') unlockPage();
 passwordForm.addEventListener('submit', (event) => {
   event.preventDefault();
   const enteredPassword = passwordInput.value.trim();
-  if (enteredPassword === '14/12/2026') {
+  if (enteredPassword === '14/12/2023') {
     passwordError.textContent = '';
     unlockPage();
     makePetals(22);
