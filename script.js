@@ -45,7 +45,7 @@ if (sessionStorage.getItem('flowersUnlocked') === 'yes') unlockPage();
 passwordForm.addEventListener('submit', (event) => {
   event.preventDefault();
   const enteredPassword = passwordInput.value.trim();
-  if (enteredPassword === '14122023') {
+  if (enteredPassword === '13122023') {
     passwordError.textContent = '';
     unlockPage();
     songAudio.play().catch(() => {});
