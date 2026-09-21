@@ -22,7 +22,7 @@ function openMusic() {
 function closeMusic() {
   musicPlayer.classList.remove('open');
   musicPlayer.setAttribute('aria-hidden', 'true');
-  songAudio.pause();
+
   musicButton.focus();
 }
 
@@ -48,6 +48,7 @@ passwordForm.addEventListener('submit', (event) => {
   if (enteredPassword === '14122023') {
     passwordError.textContent = '';
     unlockPage();
+    songAudio.play().catch(() => {});
     makePetals(22);
     return;
   }
