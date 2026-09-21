@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f5c400" />
+  <meta name="description" content="Un ramo de recuerdos para mi gordita." />
+  <title>Flores amarillas para mi gordita 💛</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Gloock&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="gate-locked">
+  <section class="password-gate" id="passwordGate" aria-labelledby="gateTitle">
+    <div class="gate-card">
+      <div class="gate-flowers" aria-hidden="true">🌼 🌻 🌼</div>
+      <p class="eyebrow">Una sorpresa para ti</p>
+      <h2 id="gateTitle">Solo mi gordita<br>puede entrar 💛</h2>
+      <p>Escribe nuestra fecha especial para abrir tus flores.</p>
+      <form id="passwordForm" autocomplete="off">
+        <label for="passwordInput">Nuestra fecha</label>
+        <div class="password-row">
+          <input id="passwordInput" name="password" type="password" inputmode="numeric" placeholder="DD/MM/AAAA" aria-describedby="passwordError" required>
+          <button type="submit">Abrir 🌻</button>
+        </div>
+        <p class="password-error" id="passwordError" role="alert" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+  <div class="petals" id="petals" aria-hidden="true"></div>
+
+  <button class="music-button" id="musicButton" type="button" aria-haspopup="dialog" aria-controls="musicPlayer">
+    <span aria-hidden="true">♫</span>
+    Nuestra canción
+  </button>
+  <section class="music-player" id="musicPlayer" role="dialog" aria-modal="true" aria-labelledby="musicTitle" aria-hidden="true">
+    <button class="music-backdrop" id="musicBackdrop" type="button" aria-label="Cerrar reproductor"></button>
+    <div class="music-card">
+      <button class="music-close" id="musicClose" type="button" aria-label="Cerrar reproductor">×</button>
+      <p class="kicker">Para escucharnos cerquita</p>
+      <h2 id="musicTitle">Nuestra canción 💛</h2>
+      <p>No hay nadie más · Sebastián Yatra</p>
+      <div class="audio-frame">
+        <div class="audio-flower" aria-hidden="true">🌻</div>
+        <audio id="songAudio" controls preload="metadata">
+          <source src="assets/nuestra-cancion.mp3" type="audio/mpeg">
+          Tu navegador no permite reproducir esta canción.
+        </audio>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="sun-glow" aria-hidden="true"></div>
+      <p class="eyebrow">21 de septiembre · para ti</p>
+      <div class="flower-mark" aria-hidden="true">🌻</div>
+      <h1>Para mi<br><em>gordita</em></h1>
+      <p class="intro">Hoy quisiera estar contigo y llegar con un ramo enorme de flores amarillas…</p>
+      <p class="intro soft">Pero como la distancia no me deja, encontré otra manera de hacerte llegar las tuyas.</p>
+      <button class="primary" id="openGift">Recibir mis flores <span>🌻</span></button>
+      <p class="tiny-note">Hechas con algo que nunca se marchita: nuestros recuerdos.</p>
+    </section>
+
+    <section class="gift" id="gift" aria-hidden="true">
+      <div class="chapter-opening reveal">
+        <span class="chapter-number">01</span>
+        <p class="kicker">Nuestro pequeño ramo</p>
+        <h2>Cada recuerdo contigo<br>es una flor que guardo.</h2>
+      </div>
+
+      <div class="memories">
+        <article class="memory reveal left">
+          <div class="photo floral-photo"><img src="assets/WhatsApp Image 2026-09-20 at 7.18.49 PM.jpeg" alt="Nosotros sonriendo juntos" loading="lazy"><span class="flower-corner" aria-hidden="true">🌻<small>🌼</small></span></div>
+          <div class="copy"><span>Un día cualquiera</span><p>Contigo, hasta un momento sencillo termina siendo uno de mis favoritos.</p></div>
+        </article>
+
+        <article class="memory reveal right">
+          <div class="photo floral-photo"><img src="assets/WhatsApp Image 2026-09-20 at 7.19.24 PM.jpeg" alt="Una aventura juntos" loading="lazy"><span class="flower-corner" aria-hidden="true">🌼<small>🌻</small></span></div>
+          <div class="copy"><span>Nuestras aventuras</span><p>No importa el lugar; si estás tú, siempre encuentro una razón para sonreír.</p></div>
+        </article>
+
+        <article class="memory reveal left">
+          <div class="photo floral-photo"><img src="assets/WhatsApp Image 2026-09-20 at 7.20.10 PM.jpeg" alt="Un viaje compartido" loading="lazy"><span class="flower-corner" aria-hidden="true">🌻<small>🌼</small></span></div>
+          <div class="copy"><span>Viajar contigo</span><p>Qué bonito es conocer nuevos lugares y sentir que mi lugar favorito camina a mi lado.</p></div>
+        </article>
+
+        <article class="memory reveal right">
+          <div class="photo floral-photo"><img src="assets/WhatsApp Image 2026-09-20 at 7.21.08 PM (2).jpeg" alt="Una foto divertida de los dos" loading="lazy"><span class="flower-corner" aria-hidden="true">🌼<small>🌻</small></span></div>
+          <div class="copy"><span>Así somos</span><p>Risas, ocurrencias y esa manera tan nuestra de hacer especial cualquier día.</p></div>
+        </article>
+      </div>
+
+      <section class="bouquet-section reveal" aria-label="Un ramo formado con nuestros recuerdos">
+        <p class="kicker">Un ramo que nunca se marchita</p>
+        <h2>Flores hechas de<br>nuestros recuerdos</h2>
+        <div class="photo-bouquet">
+          <span class="bloom b1" aria-hidden="true">🌻</span>
+          <span class="bloom b2" aria-hidden="true">🌼</span>
+          <span class="bloom b3" aria-hidden="true">🌻</span>
+          <span class="bloom b4" aria-hidden="true">🌼</span>
+          <span class="bloom b5" aria-hidden="true">🌻</span>
+          <span class="bloom b6" aria-hidden="true">🌼</span>
+          <figure class="bouquet-photo p1"><img src="assets/WhatsApp Image 2026-09-20 at 7.19.10 PM.jpeg" alt="Recuerdo juntos al aire libre" loading="lazy"></figure>
+          <figure class="bouquet-photo p2"><img src="assets/WhatsApp Image 2026-09-20 at 7.19.37 PM.jpeg" alt="Recuerdo juntos frente al mar" loading="lazy"></figure>
+          <figure class="bouquet-photo p3"><img src="assets/WhatsApp Image 2026-09-20 at 7.19.51 PM.jpeg" alt="Recuerdo juntos compartiendo una comida" loading="lazy"></figure>
+          <figure class="bouquet-photo p4"><img src="assets/WhatsApp Image 2026-09-20 at 7.20.23 PM.jpeg" alt="Recuerdo juntos de viaje" loading="lazy"></figure>
+          <figure class="bouquet-photo p5"><img src="assets/WhatsApp Image 2026-09-20 at 7.21.08 PM (3).jpeg" alt="Selfie juntos" loading="lazy"></figure>
+          <figure class="bouquet-photo p6"><img src="assets/WhatsApp Image 2026-09-20 at 7.21.08 PM (4).jpeg" alt="Nosotros sonriendo" loading="lazy"></figure>
+          <div class="bouquet-ribbon" aria-hidden="true">💛</div>
+        </div>
+        <p class="bouquet-caption">Cada flor guarda una sonrisa, un viaje y un pedacito de nosotros.</p>
+      </section>
+
+      <section class="distance reveal">
+        <span class="chapter-number">02</span>
+        <h2>La distancia solo cambia<br>la forma de abrazarte.</h2>
+        <p>No cambia cuánto te pienso, cuánto te extraño ni todas las ganas que tengo de volver a verte.</p>
+      </section>
+
+      <section class="letter reveal">
+        <div class="letter-flower" aria-hidden="true">🌼</div>
+        <p class="kicker">Una carta para ti</p>
+        <h2>Mi gordita,</h2>
+        <p>Hoy no puedo tocar tu puerta con un ramo en las manos, pero no quería que pasara este día sin que recibieras tus flores amarillas.</p>
+        <p>Cada una de estas fotos me recuerda lo afortunado que soy de compartir mi vida contigo. Gracias por las risas, por las aventuras y por hacerme sentir cerca incluso cuando hay kilómetros entre nosotros.</p>
+        <p>Te extraño muchísimo. Y espero que muy pronto pueda cambiar estas flores virtuales por unas de verdad… y entregártelas yo mismo.</p>
+        <blockquote class="gerbera-message">
+          <span class="gerberas" aria-hidden="true">🌼 🌼 🌼</span>
+          <p>Así como tres gerberas simbolizan un “te amo”, estas flores llevan todo lo que siento por ti.</p>
+          <p>Gracias por el amor que me das cada día, por cuidarme, acompañarme y hacer mi vida más bonita. Te amo muchísimo y quiero que nunca olvides que siempre estaré para ti, mi gordita.</p>
+        </blockquote>
+        <p class="signature">Con mucho amor,<br><strong>tu gordito 💛</strong></p>
+      </section>
+
+      <section class="finale reveal">
+        <div class="final-photo">
+          <img src="assets/WhatsApp Image 2026-09-20 at 7.21.08 PM.jpeg" alt="Nosotros con un ramo de flores amarillas" loading="lazy">
+        </div>
+        <div class="final-card">
+          <p class="kicker">Y una última flor para ti…</p>
+          <h2>Mi flor favorita<br>siempre vas a ser tú.</h2>
+          <div class="bouquet" aria-hidden="true">🌻 🌼 🌻</div>
+          <p>Feliz día de las flores amarillas, mi gordita.</p>
+          <button class="secondary" id="moreLove">Toca aquí 💛</button>
+          <p class="secret" id="secret">Estés donde estés, nunca quiero que te falte un detalle mío. Te amo.</p>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
